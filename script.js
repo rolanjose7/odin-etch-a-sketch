@@ -1,10 +1,11 @@
-const container = document.querySelector('.container');
-const div = document.createElement('div');
-const div1 = document.createElement('div');
-const div2 = document.createElement('div');
-div.classList.add('block');
-div1.classList.add('block');
-div2.classList.add('block');
-container.appendChild(div);
-container.appendChild(div1);
-container.appendChild(div2);
+let container = document.querySelector('.container');
+
+function createDiv(num){
+    for(let i = 0; i < num; i++){
+        var div1 = document.createElement('div');
+        div1.classList.add('block');
+        container.append(div1);
+    }
+}
+let numberOfDivs = 256;
+createDiv(numberOfDivs);
