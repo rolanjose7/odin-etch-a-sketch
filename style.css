@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 10px solid red;
+    height: 450px;
+    width: 250px;
+    display: flex;
+}
+
+.block {
+    border: 3px solid blue;
+    width: 100%;
+}
